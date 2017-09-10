@@ -17,7 +17,7 @@ Intl.add('es', {
     'WELCOME_MSG': 'Hola hola. Bienvenido.'
 });
 
-// Create a interface for our app
+// Create an interface for our app
 
 const Str = Intl.lang('en');
 

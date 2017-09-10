@@ -1,8 +1,8 @@
 {
   "name": "react-intlstrings",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Effortless internationalization for React.js",
-  "main": "intlstrings.js",
+  "main": "dist/intlstrings.min.js",
   "scripts": {
     "dist": "babel intlstrings.js --presets=es2015,react | uglifyjs > dist/intlstrings.min.js"
   },

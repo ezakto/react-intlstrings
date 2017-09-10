@@ -18,7 +18,7 @@ export function lang(code) {
         const key = isComponent ? (strOrProps.id || strOrProps.string) : strOrProps;
         const props = isComponent ? strOrProps : injectedProps;
         const value = dictionary[code][key];
-        const string = typeof value === 'function' ? string(props) : value;
+        const string = typeof value === 'function' ? value(props) : value;
 
         return isComponent && typeof string === 'string' ? (<span>{string}</span>) : string;
     };
