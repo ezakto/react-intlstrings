@@ -1,0 +1,38 @@
+{
+  "name": "react-intlstrings",
+  "version": "0.1.0",
+  "description": "Effortless internationalization for React.js",
+  "main": "intlstrings.js",
+  "scripts": {
+    "dist": "babel intlstrings.js --presets=es2015,react | uglifyjs > dist/intlstrings.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezakto/react-intlstrings.git"
+  },
+  "keywords": [
+    "internationalization",
+    "i18n",
+    "translation",
+    "strings",
+    "react",
+    "component",
+    "helper"
+  ],
+  "author": "Nicolás Arias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ezakto/react-intlstrings/issues"
+  },
+  "homepage": "https://github.com/ezakto/react-intlstrings#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "uglify-js": "^3.1.0"
+  },
+  "peerDependencies": {
+    "react": "^15.6.1"
+  }
+}
