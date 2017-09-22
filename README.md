@@ -54,7 +54,7 @@ Maybe you want a JSX structure that makes some stuff under the hood before retur
 
 ```js
 Intl.add('en', {
-    SELECTED_SHIRT: props => <span>You've selected a {props.color} shirt!</span>
+    SELECTED_SHIRT: props => <span>You have selected a {props.color} shirt!</span>
 });
 
 ...
