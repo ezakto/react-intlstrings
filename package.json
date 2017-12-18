@@ -1,6 +1,6 @@
 {
   "name": "react-intlstrings",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Effortless internationalization for React.js",
   "main": "dist/intlstrings.min.js",
   "scripts": {
@@ -33,6 +33,6 @@
     "uglify-js": "^3.1.0"
   },
   "peerDependencies": {
-    "react": "^15.6.1"
+    "react": "^16.0.0"
   }
 }

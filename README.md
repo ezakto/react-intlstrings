@@ -40,7 +40,7 @@ This lib was created to use with React.js specifically. So, there's some added s
 
 ### Messages can be JSX structures
 
-You can return JSX structures as instead of plain strings:
+You can return JSX structures instead of plain strings:
 
 ```js
 Intl.add('en', {
@@ -54,13 +54,13 @@ Maybe you want a JSX structure that makes some stuff under the hood before retur
 
 ```js
 Intl.add('en', {
-    SELECTED_SHIRT: props => <span>You have selected a {props.color} shirt!</span>
+    SELECTED_SHIRT: props => `You've selected a ${props.color} shirt!`
 });
 
 ...
 render() {
     return (
-        <div className="msg"><Str id="SELECTED_SHIT" color="red" /></div>
+        <div className="msg"><Str id="SELECTED_SHIRT" color="red" /></div>
     );
 }
 ...
@@ -68,7 +68,7 @@ render() {
 
 ### Plain function call
 
-What if you want to pass a localized string via props? Or maybe mix it somewhere in a string? The function retured by `Intl.lang()` is actually an overloaded function. It returns JSX when it's called from a JSX structure, and it returns a plain string when it's called directly. So, you can:
+What if you want to pass a localized string via props? Or maybe mix it somewhere in a string? The function returned by `Intl.lang()` is actually an overloaded function. It works both as a JSX element, and you can also call it directly passing a plain string id. So, you can:
 
 ```js
 Intl.add('en', {
@@ -87,7 +87,7 @@ render() {
 
 ### Passing arguments to a plain function
 
-If you define your message as a function, JSX props will be passed as the first argument. But, what happens when you want to define a function but you're not calling it as a component? There's an optional second argument in the plain call to do that.
+If you define your message as a function, JSX props will be passed as the first argument. But, what happens when you want to define a function but you're not calling it via JSX? There's an optional second argument in the plain call to do that.
 
 ```js
 Intl.add('en', {
